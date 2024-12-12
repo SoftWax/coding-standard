@@ -362,32 +362,32 @@
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
-                <element key="strlen" value="mb_strlen"/>
-                <element key="strpos" value="mb_strpos"/>
-                <element key="stripos" value="mb_stripos"/>
-                <element key="strrpos" value="mb_strrpos"/>
-                <element key="substr" value="mb_substr"/>
-                <element key="strtolower" value="mb_strtolower"/>
-                <element key="strtoupper" value="mb_strtoupper"/>
-                <element key="substr_count" value="mb_substr_count"/>
-                <element key="ereg" value="mb_ereg"/>
-                <element key="eregi" value="mb_eregi"/>
-                <element key="ereg_replace" value="mb_ereg_replace"/>
-                <element key="eregi_replace" value="mb_eregi_replace"/>
-                <element key="split" value="mb_split"/>
-                <element key="sizeof" value="count"/>
+                <element key="boolval" value="(bool)"/>
+                <element key="dd" value="null"/>
                 <element key="delete" value="unset"/>
+                <element key="die" value="null"/>
+                <element key="dump" value="null"/>
+                <element key="ereg" value="mb_ereg"/>
+                <element key="ereg_replace" value="mb_ereg_replace"/>
+                <element key="eregi" value="mb_eregi"/>
+                <element key="eregi_replace" value="mb_eregi_replace"/>
+                <element key="exit" value="null"/>
+                <element key="floatval" value="(float)"/>
+                <element key="intval" value="(int)"/>
                 <element key="is_null" value="null"/>
                 <element key="join" value="implode"/>
-                <element key="die" value="null"/>
-                <element key="exit" value="null"/>
-                <element key="dump" value="null"/>
-                <element key="dd" value="null"/>
-                <element key="var_dump" value="null"/>
-                <element key="intval" value="(int)"/>
-                <element key="boolval" value="(bool)"/>
-                <element key="floatval" value="(float)"/>
+                <element key="sizeof" value="count"/>
+                <element key="split" value="mb_split"/>
+                <element key="stripos" value="mb_stripos"/>
+                <element key="strlen" value="mb_strlen"/>
+                <element key="strpos" value="mb_strpos"/>
+                <element key="strrpos" value="mb_strrpos"/>
+                <element key="strtolower" value="mb_strtolower"/>
+                <element key="strtoupper" value="mb_strtoupper"/>
                 <element key="strval" value="(string)"/>
+                <element key="substr" value="mb_substr"/>
+                <element key="substr_count" value="mb_substr_count"/>
+                <element key="var_dump" value="null"/>
             </property>
         </properties>
     </rule>
