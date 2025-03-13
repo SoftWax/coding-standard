@@ -305,9 +305,10 @@
     <!-- Forbid useless @var for constants -->
     <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
     <!-- Define unions style -->
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
         <properties>
-            <property name="withSpaces" value="no" />
+            <property name="withSpacesAroundOperators" value="no" />
+            <property name="withSpacesInsideParentheses" value="no" />
         </properties>
     </rule>
 
@@ -376,6 +377,9 @@
                 <element key="intval" value="(int)"/>
                 <element key="is_null" value="null"/>
                 <element key="join" value="implode"/>
+                <element key="lcfirst" value="mb_lcfirst"/>
+                <element key="ltrim" value="mb_ltrim"/>
+                <element key="rtrim" value="mb_rtrim"/>
                 <element key="sizeof" value="count"/>
                 <element key="split" value="mb_split"/>
                 <element key="stripos" value="mb_stripos"/>
@@ -387,6 +391,8 @@
                 <element key="strval" value="(string)"/>
                 <element key="substr" value="mb_substr"/>
                 <element key="substr_count" value="mb_substr_count"/>
+                <element key="trim" value="mb_trim"/>
+                <element key="ucfirst" value="mb_ucfirst"/>
                 <element key="var_dump" value="null"/>
             </property>
         </properties>
